@@ -2,6 +2,7 @@ version: "3"
 
 services:
   app:
+    image: sabberslt/claude2:latest
     build:
       context: .
       dockerfile: Dockerfile
