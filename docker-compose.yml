@@ -7,10 +7,13 @@ services:
       dockerfile: Dockerfile
     environment:
       - NODE_ENV=production
+      - BOT_TOKEN=${BOT_TOKEN}
+      - SESSION=${SESSION}
+    env_file:
+      - .env
     ports:
       - "3000:3000"
     volumes:
       - ./:/app
       - /app/node_modules
-      - ./.env:/app/.env
     command: node index.js

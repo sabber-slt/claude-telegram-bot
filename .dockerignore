@@ -1,0 +1,15 @@
+# exclude node_modules
+node_modules
+
+# exclude git files
+.git
+
+# exclude docs
+docs
+
+# exclude test outputs
+test-results/
+*.log
+
+# exclude config files
+.env

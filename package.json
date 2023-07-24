@@ -17,6 +17,7 @@
   "dependencies": {
     "claude-ai": "^1.2.0",
     "dotenv": "^16.3.1",
+    "semver": "^5.7.2",
     "telegraf": "^4.12.2"
   }
 }

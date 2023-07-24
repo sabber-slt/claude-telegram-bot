@@ -13,6 +13,14 @@ Since Anthropic has been reluctant to provide API access unless you're a major o
 
 ### How to install ?
 
+Get sessionKey from the sessionKey cookie via the Claude website.
+
+```sh
+const claude = new Claude({
+  sessionKey: 'YOUR_SESSION_KEY'
+});
+```
+
 with docker you should first install docker and docker-compose and then run the following command:
 
 ```sh
@@ -22,9 +30,8 @@ docker-compose up -d
 - Sign up for a Claude AI account and get an API key
 - Second acquire telegram token from the BOTFATHER. [Telegram token](https://telegram.me/BotFather)
 - Clone This repo
-- Cd telegram-chatgpt-bot
-- Put your api keys in .env.local
-- Change the name of .env.local to .env
+- Cd claude-telegram
+- Put your api keys in .env
 - If you have installed docker in your system just run docker-compose up -d and ignore rest
 - To install all modules `yarn`
 - To run developer server `yarn dev`
